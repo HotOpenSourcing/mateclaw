@@ -99,8 +99,6 @@ deploy/nginx/ssl/*.pem
 
 # Env files (real secrets - do not commit)
 # .env matches any level; .env.example / *.env.example are templates and stay tracked.
-.env
-.env.local
 .env.*.local
 !.env.example
 !**/.env.example
@@ -132,3 +130,4 @@ yarn.lock
 # are executed. Never commit or sync these.
 __pycache__/
 *.pyc
+config.bat

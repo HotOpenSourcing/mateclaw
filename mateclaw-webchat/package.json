@@ -6,10 +6,12 @@
   "main": "dist/mateclaw-webchat.umd.js",
   "module": "dist/mateclaw-webchat.es.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && cp -r dist/ ../mateclaw-server/src/main/resources/static/webchat/",
+    "dev": "node init && vite",
+    "build": "node init && vite build && cp -r dist/ ../mateclaw-server/src/main/resources/static/webchat/",
     "preview": "vite preview"
   },
   "devDependencies": {
